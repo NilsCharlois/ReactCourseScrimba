@@ -1,4 +1,5 @@
 import './App.css'
+import { CardComponent } from './Components/CardComponent'
 import { NavbarComponent } from './Components/NavbarComponent'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <div>
         <NavbarComponent/>
+        <CardComponent />
       </div>      
     </>
   )
