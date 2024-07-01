@@ -1,14 +1,12 @@
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
-import logo from '../assets/react.svg'
-import logoGroceryStore from '../assets/tqt8v2cj0q3b2gqq9l4u150d72.png'
 
 export function NavbarComponent(){
     return (
     <Navbar bg="dark" variant="dark" sticky="top" expand="sm" collapseOnSelect>
         <Navbar.Brand>
             Grocery planner {''}
-          <img src={logoGroceryStore} width="50px" height="50px" />
+          <img src='../images/tqt8v2cj0q3b2gqq9l4u150d72.png' width="50px" height="50px" />
         </Navbar.Brand>
         <Navbar.Toggle className="coloring" />
         <Navbar.Collapse>
