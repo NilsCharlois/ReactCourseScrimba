@@ -9,12 +9,14 @@ function App() {
 
   const dataElements = Data.map(element => {
     return <CardComponent
+      key={element.id}
       img={element.coverImg}
       rating={element.rating}
       reviewCount={element.reviewCount}
       location={element.location}
       title={element.title}
       price={element.price}
+      openSpots={element.openSpots}
       />
 })
 

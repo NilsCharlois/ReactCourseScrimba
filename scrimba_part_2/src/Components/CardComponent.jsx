@@ -1,9 +1,18 @@
 import React from 'react'
 
 export function CardComponent(props){
-    console.log(props)
+    let badgeText;
+    if(props.openSpots === 0)
+        {
+            badgeText = "SOLD OUT"
+        }
+        else
+        {
+            badgeText = "ONLINE"
+        }
     return (
         <div className="card">
+            {badgeText && <div className="card--badge">{badgeText}</div>}
             <img src={`../images/${props.img}`} alt="picture" className="card--image" />
             <div className="card--stats">
                 <img src='../images/star.png' className="card--star" />
