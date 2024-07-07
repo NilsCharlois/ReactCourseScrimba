@@ -1,6 +1,6 @@
 export function HeaderComponent() {
     return (
-        <header>
+        <header className="header">
             <img 
             className="header--image"
             src="../images/troll-face.png"
